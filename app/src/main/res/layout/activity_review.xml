@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReviewActivity">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="OVERALL EXPERIENCE"
+                android:id="@+id/overall_textView"
+                android:textSize="20dp"
+
+                />
+            <RatingBar
+                android:theme="@style/RatingBar"
+                android:id="@+id/overall_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:saveEnabled="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/overall_textView"
+                android:numStars="5"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:text="Level of Illumination"
+                android:id="@+id/illumination_textView"
+                android:layout_below="@id/overall_rating"
+                />
+            <RatingBar
+                android:theme="@style/RatingBar"
+                android:id="@+id/illumination_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:saveEnabled="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/illumination_textView"
+                android:numStars="5"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:text="Population Density"
+                android:layout_below="@id/illumination_rating"
+                android:id="@+id/population_textView"
+                />
+            <RatingBar
+                android:theme="@style/RatingBar"
+                android:id="@+id/population_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:saveEnabled="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/population_textView"
+                android:numStars="5"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:text="Qualtiy of Road"
+                android:id="@+id/quality_textView"
+                android:layout_below="@id/population_rating"
+                />
+            <RatingBar
+                android:theme="@style/RatingBar"
+                android:id="@+id/quality_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:saveEnabled="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/quality_textView"
+                android:numStars="5"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Other Comments"
+                android:layout_margin="16dp"
+                android:id="@+id/other_textview"
+                android:textColor="#000000"
+                android:layout_marginLeft="25dp"
+                android:textSize="18dp"
+                android:layout_below="@id/quality_rating"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/editText"
+                android:layout_height="100dp"
+                android:background="#d3d3d3"
+                android:layout_marginRight="25dp"
+                android:layout_below="@id/other_textview"
+                android:layout_marginLeft="25dp" />
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@color/mapbox_blue"
+                android:text="Submit"
+                android:layout_below="@+id/editText"
+                android:textColor="@android:color/white"
+                 android:layout_alignParentBottom="true"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
